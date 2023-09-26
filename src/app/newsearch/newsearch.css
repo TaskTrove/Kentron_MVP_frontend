@@ -1,0 +1,43 @@
+.newsearch{
+    width: 100%;
+    height: 100vh;
+    color: #000;
+    background-color: aliceblue;
+}
+form{
+    width: 800px;
+    padding: 40px;
+}
+.namebox{
+    font-size: 18px;
+    margin-top: 10px;
+} 
+.namebox input[type='text']{
+    border: 2px solid #000;
+    width: 320px;
+    border-radius: 5px;
+    padding: 4px;
+    margin-top: 10px;
+}
+.btnbox{
+    display: flex;
+}
+.btnbox button{
+    width: 360px;
+    padding: 6px 40px;
+    text-align: center;
+    margin-top: 80px;
+    color: #fff;
+}
+.nextbtn{
+    background: green;
+    border-radius: 5px;
+}
+.boxes2{
+    margin-top: 35px;
+}
+.cancelbtn{
+    background: rgba(128, 128, 128, 0.652);
+    border-radius: 5px;
+    margin-left: 20px;
+}
