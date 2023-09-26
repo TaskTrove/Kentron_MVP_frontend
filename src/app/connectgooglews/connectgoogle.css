@@ -1,0 +1,106 @@
+.connectgoogle{
+    width: 100%;
+    background-color: aliceblue;
+    height: 100vh;
+    color: #000;
+}
+
+.googleheader{
+    display: flex;
+}
+.headertext{
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+form{
+    padding: 20px;
+    /* background: #000; */
+    width: 650px;
+}
+.imggoogle{
+    width: 80px;
+}
+.gwchecks{
+    font-size: 18px;
+    display: flex;
+
+}
+input[type="checkbox"]{
+    margin-right: 10px;
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+.check1{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+.check2{
+    margin-right:200px;
+}
+.check3{
+    margin-top: 8px;
+}
+.radioclicks{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.radioclicks input[type='radio']{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+.radiocheck1{
+    margin-top: 4px;
+}
+.syncmode{
+    display: flex;
+    margin-left: 35px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.syncmode label{
+    margin-right: 10px;
+    margin-top: 4px;
+    font-size: 19px;
+}
+.syncmode select{
+    width: 355px;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.date{
+    display: flex;
+    margin-left: 35px;
+    margin-top: 35px;
+}
+.dates{
+    font-size: 18px;
+}
+.dates p{
+    text-align: start;
+}
+.dates input[type='date']{
+    width: 140px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.finish{
+    margin-left: 40px;
+}
+.btnsubmit{
+    background: green;
+    color: #fff;
+    padding: 6px 70px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 30px;
+}

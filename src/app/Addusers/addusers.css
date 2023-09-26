@@ -1,0 +1,59 @@
+.connectslack2{
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    color: #000;
+}
+form{
+    width: 800px;
+    padding: 40px;
+}
+.slackheader{
+    display: flex;
+}
+.imgslack{
+    width: 55px;
+    margin-right: 20px;
+}
+.headertext{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.adduserbox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+.adduserbox p{
+    font-size: 18px;
+}
+.adduserbox input[type="text"]{
+    width: 360px;
+    padding: 6px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+
+
+.btnbox{
+    display: flex;
+    margin-top: 80px;
+}
+.btnbox button{
+    width: 360px;
+    padding: 6px 40px;
+    text-align: center;
+    margin-top: 80px;
+    color: #fff;
+}
+.nextbtn{
+    background: green;
+    border-radius: 5px;
+}
+.cancelbtn{
+    background: rgba(128, 128, 128, 0.652);
+    border-radius: 5px;
+    margin-left: 20px;
+}

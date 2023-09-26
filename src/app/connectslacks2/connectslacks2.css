@@ -1,0 +1,68 @@
+.connectslack2{
+    width: 100%;
+    height: 100vh;
+    background: aliceblue;
+    color: #000;
+}
+form{
+    width: 800px;
+    padding: 40px;
+}
+.slackheader{
+    display: flex;
+}
+.imgslack{
+    width: 55px;
+    margin-right: 20px;
+}
+.headertext{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.chooseopt{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.slackcheckbox{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.slackscheck1{
+    margin-top: 25px ;
+}
+.slackcheckbox input[type='checkbox']{
+    width: 30px;
+    height: 30px;
+}
+.slackcheckbox p {
+    font-size: 18px;
+}
+
+.imgico{
+    width: 30px;
+    margin: 0 20px;
+}
+
+
+.btnbox{
+    display: flex;
+    margin-top: 0px;
+}
+.btnbox button{
+    width: 360px;
+    padding: 6px 40px;
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+.nextbtn{
+    background: green;
+    border-radius: 5px;
+}
+.cancelbtn{
+    background: rgba(128, 128, 128, 0.652);
+    border-radius: 5px;
+    margin-left: 20px;
+}

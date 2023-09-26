@@ -1,0 +1,89 @@
+.connectslack1{
+    width: 100%;
+    height: 100vh;
+    color: #000;
+    background-color: aliceblue;
+}
+form{
+    width: 800px;
+    padding: 40px;
+}
+.slackheader{
+    display: flex;
+}
+.imgslack{
+    width: 55px;
+    margin-right: 20px;
+}
+.headertext{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.namebox{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.namebox .nametxt span{
+    color: red;
+    font-size: 25px;
+} 
+.namebox input[type='text']{
+    border: 2px solid #000;
+    width: 320px;
+    border-radius: 5px;
+    padding: 4px;
+}
+.syncmodes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.syncmodes label{
+    font-size: 18px;
+}
+.syncmodes select{
+    width: 400px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 4px;
+}
+.date{
+    display: flex;
+    margin-top: 25px;
+}
+.dates{
+    font-size: 18px;
+}
+.dates p{
+    text-align: start;
+}
+.dates input[type='date']{
+    width: 140px;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.finish{
+    margin-left: 40px;
+}
+.btnbox{
+    display: flex;
+}
+.btnbox button{
+    width: 360px;
+    padding: 6px 40px;
+    text-align: center;
+    margin-top: 80px;
+    color: #fff;
+}
+.servicebtn{
+    background: green;
+    border-radius: 5px;
+}
+.cancelbtn{
+    background: rgba(128, 128, 128, 0.652);
+    border-radius: 5px;
+    margin-left: 20px;
+}
