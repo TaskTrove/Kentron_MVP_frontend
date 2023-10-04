@@ -1,151 +1,307 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-.dashboard-container{
-    display: flex;
-    gap: 3rem;
-}
-
-.dashboard-body{
-    width: 100%;
-}
-
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    background: #DEDADA;
-    height: 100vh;
-    /* padding: 0 3rem; */
-    padding: 4rem 3rem 0rem 3rem;
-    position: relative;
-}
-
-.sidebar .sidebar-menu{
-    position: absolute;
+  /* Sidebar Styles */
+  .sidebar {
+    background-color: #dedada; /* Sidebar background color */
+    color: #333;
+    width: 250px;
+    height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
-}
-
-.sidebar .sidebar-header{
-    color: #000;
-    /* text-align: center; */
-    /* font-family: Roboto; */
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    margin-bottom: 1.75rem;
-}
-
-.sidebar .sidebar-nav{
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
-    color: #000;
-    /* text-align: center; */
-    /* font-family: Roboto; */
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5rem; /* 75% */
-}
+    margin-top: 4.2rem;
+  }
 
-.sidebar .sidebar-nav .sidebar-nav-link{
+  .sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #478d52; /* Primary color for header */
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .sidebar-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
 
-}
-
-    
-    /* workspaces navbar */
-
-.workspace-nav-container{
+  .sidebar-nav {
+    flex-grow: 1;
     display: flex;
-    gap: 2rem;
-    margin-top: 4rem;
-}
-
-.workspace-nav-container .workspace-nav-link{
-    color: #000;
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 400; /* 2.10938rem */
-}
-
-.workspace-nav-container .workspace-nav-link.active {
-    color: #000;
-    /* font-family: Roboto; */
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700; /* 2.10938rem */
+    flex-direction: column;
+    padding: 20px;
   }
 
-  .workspace-body-container{
-    margin-top: 1rem;
-  }
-
-  .workspace-body-container .workspace-body-header{
+  .sidebar-nav-link {
     display: flex;
-    gap: 1rem;
-    color: #000;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 400;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
   }
 
-  .workspace-body-container .workspace-form{
-    margin-top: 2.6rem;
-  }
-
-  .workspace-body-container .workspace-form label{
-    color: #000;
-    font-family: Roboto;
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 400;
-  }
-
-
-  .workspace-body-container .workspace-form .continue-button{
-    color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 0.5rem 1.5rem ;
-    border-radius: 0.3125rem;
-    background: #478D52;
-    margin-top: 7rem;
-  }
-  .workspace-body-container .workspace-form p{
-    color: #000;
-    font-family: Roboto;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
+  .dashboard-body {
     margin-top: 2rem;
   }
 
-  .workspace-body-container .workspace-form .checkbox1, .checkbox2 {
+  /* Workspace Body Styles */
+  .workspace-body-container {
+    margin-left: 250px; /* Match sidebar width */
+    padding: 0 2rem;
+  }
+
+  .workspace-body-header {
     display: flex;
+    align-items: center;
+  }
+
+  .workspace-form {
+    max-width: 654px;
+  }
+
+  .checkbox-label,
+  .radio-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .checkbox,
+  .radio {
+    margin-right: 10px;
+  }
+
+  .dropdown-label {
+    margin-top: 10px;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .dropdown {
+    width: 45%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .continue-button {
+    background-color: #478d52; /* Primary color for buttons */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 480px;
+  }
+
+  .ending-para {
+    margin-top: 10px;
+  }
+
+  /* Workspace Navbar Styles */
+  .workspace-nav-container {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: 250px;
+  }
+
+  .workspace-nav-link {
+    margin-right: 10px;
+  }
+
+  .workspace-nav-link:nth-child(1) {
+    margin-left: 2rem;
+  }
+
+  .workspace-nav-link a {
+    text-decoration: none;
+    color: #333;
+    /* padding: 10px; */
+  }
+
+  .workspace-nav-link.active a {
+    font-weight: 700;
+  }
+
+  /* CSS for Checkbox Container */
+  .checkbox-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow checkboxes to wrap to the next line when needed */
+    gap: 10px; /* Adjust the gap between checkboxes */
+  }
+
+  /* CSS for Each Checkbox Group (checkbox1 and checkbox2) */
+  .checkbox-group {
+    flex: 1; /* Make each group grow equally within the container */
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  /* CSS for Checkbox Label */
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .checkbox {
+    margin-right: 8px; /* Adjust the spacing between checkbox and label */
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items vertically */
+    background-color: #888;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .navbar-left {
+    flex: 1; /* Take up available space */
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+
+  .menu-bar-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  .navbar-middle {
+    flex: 1; /* Take up available space */
+    text-align: center;
+
+    font-family: Roboto;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .navbar-right {
+    flex: 1; /* Take up available space */
+    display: flex;
+    justify-content: flex-end; /* Push items to the right */
+  }
+
+  .right-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    color: #fff;
+  }
+
+  .button-icon {
+    width: 40px;
+    height: 24px;
+    margin-left: 10px;
+  }
+
+  /* form 2 */
+  .workspace-form-2 {
+    max-width: 654px;
+  }
+
+  .input-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .date-section {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
     gap: 2rem;
   }
 
-/* Style the select element */
-.dropdown {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    background-color: #fff;
-    font-size: 16px; /* Adjust font size as needed */
-    color: #333; /* Text color */
+  .date-section-containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+
+  .cancel-button {
+    background: #c4c4c4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
     cursor: pointer;
+    /* margin-top: 10px; */
+    /* width: 480px; */
+  }
+
+  .btn-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .btn-section .continue-button {
+    margin-top: 0;
     width: 50%;
   }
-  
-  /* Style the select element when it's hovered */
-  .dropdown:hover {
-    border-color: #007bff; /* Border color on hover */
+
+  .btn-section button {
+    width: 50%;
   }
-  
+
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      position: static;
+    }
+
+    .workspace-body-container {
+      margin-left: 0;
+    }
+
+    .workspace-nav-container {
+      margin-left: 0;
+      white-space: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+    }
+
+    .workspace-nav-link:nth-child(1) {
+      margin-left: 1rem;
+    }
+
+    .sidebar {
+      margin-top: 0;
+    }
+
+    .continue-button {
+      width: 100%;
+    }
+    .dropdown {
+      width: 100%;
+    }
+    .dropdown-label {
+      flex-direction: column;
+    }
+  }
